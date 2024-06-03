@@ -1,0 +1,99 @@
+class Rectangle: #task 1
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+S = Rectangle(5,3)
+P = Rectangle(4,2)
+
+print(S.width * S.height)
+
+print((P.height+P.width) * 2)
+
+
+
+class Triangle:
+    def __init__(self, a, b, c, h):
+        self.a = a
+        self.b = b
+        self.c = c
+        self.h = h
+S = Triangle(9,4, 5, 3)
+P = Triangle(9, 4, 5, 3)
+
+print((S.a * S.h) / 2)
+print(P.a + P.b + P.c)
+
+
+class Circle:
+    def __init__(self, r, pi):
+        self.r = r
+        self.pi = pi
+
+S = Circle(3, 3.14)
+P = Circle(4, 3.14)
+
+print(S.pi * S.r * S.r)
+
+print(2* P.r * P.pi)
+
+
+class Math: #task 2
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def addition(self):
+        return (self.a + self.b)
+    def multiplication(self):
+         return self.a * self.b
+
+    def division(self):
+        return self.a / self.b
+
+    def substraction(self):
+        return self.a - self.b
+
+Result = Math(3,9)
+
+print(Result.addition())
+print(Result.multiplication())
+print(Result.division())
+print(Result.substraction())
+
+
+class Elements: #task 3
+    def __init__(self, text, type = 'Кнопка', loc = ' '):
+        self.text = text
+        self.type = type
+        self.loc = loc
+
+    def click(self):
+        return "Клик по кнопке {}".format(self.text)
+
+a = Elements('Text Box')
+b = Elements('Сheck Box')
+c = Elements('Radio Button')
+d = Elements('Web Tables')
+e = Elements('Buttons')
+f = Elements('Links')
+g = Elements('Broken Links - Images')
+h = Elements('Upload and Download')
+i = Elements('Dynamic Properties')
+print(a.text, a.type, a.loc)
+print(b.text, b.type, b.loc)
+print(c.text, c.type, c.loc)
+print(d.text, d.type, d.loc)
+print(e.text, e.type, e.loc)
+print(f.text, f.type, f.loc)
+print(g.text, g.type, g.loc)
+print(h.text, h.type, h.loc)
+print(i.text, i.type, i.loc)
+print(a.click())
+print(b.click())
+print(c.click())
+print(d.click())
+print(e.click())
+print(f.click())
+print(g.click())
+print(h.click())
+print(i.click())
